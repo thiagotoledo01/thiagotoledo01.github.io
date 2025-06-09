@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doação</title>
+    <link rel="icon" type="icon" href="favicon/money.png">
+    <link rel="stylesheet" href="doacao.css">
+</head>
+<body>
+    <h1>Formulário de identificação (para doar)</h1>
+
+    <form action="https://www.doearenacorinthians.com.br/#contribua" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required minlength="3" maxlength="30" placeholder="Informe o seu nome completo">
+
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" min="18" max="120" id="idade" required placeholder="Idade">
+
+        <label for="sexo">Sexo:</label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="sexo" value="M" required> Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="F" required> Feminino
+            </label>
+        </div>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" required name="cpf" id="cpf" minlength="14" maxlength="14" placeholder="Digite seu CPF">
+
+        <label for="rg">RG:</label>
+        <input type="text" required name="rg" id="rg" minlength="12" maxlength="12" placeholder="Digite seu RG">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required id="email" placeholder="Digite seu Email">
+
+        <input type="submit" value="Doar">
+    </form>
+
+    <table>
+        <tr>
+            <td align="left">
+                <p>Contato📞:</p>    
+                <a href="tel:+55 (11) 2095-3000">+55 (11) 2095-3000</a>
+            </td>
+
+            <td align="right">
+                <p>Email📧:</p>
+                <a href="mailto:ouvidoria@sccorinthians.com.br">ouvidoria@sccorinthians.com.br</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
